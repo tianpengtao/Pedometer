@@ -1,0 +1,333 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		94B2456C1CED4B7000324364 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B2456B1CED4B7000324364 /* main.m */; };
+		94B2456F1CED4B7000324364 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B2456E1CED4B7000324364 /* AppDelegate.m */; };
+		94B245721CED4B7000324364 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B245711CED4B7000324364 /* ViewController.m */; };
+		94B245751CED4B7000324364 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B245731CED4B7000324364 /* Main.storyboard */; };
+		94B245771CED4B7000324364 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94B245761CED4B7000324364 /* Assets.xcassets */; };
+		94B2457A1CED4B7000324364 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94B245781CED4B7000324364 /* LaunchScreen.storyboard */; };
+		94B245931CEDA58300324364 /* QYPedometerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B245901CEDA58300324364 /* QYPedometerData.m */; };
+		94B245941CEDA58300324364 /* QYPedometerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B245921CEDA58300324364 /* QYPedometerManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		94B245671CED4B6F00324364 /* QYPedometerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QYPedometerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B2456B1CED4B7000324364 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		94B2456D1CED4B7000324364 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		94B2456E1CED4B7000324364 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		94B245701CED4B7000324364 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		94B245711CED4B7000324364 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		94B245741CED4B7000324364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94B245761CED4B7000324364 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94B245791CED4B7000324364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94B2457B1CED4B7000324364 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94B2458F1CEDA58300324364 /* QYPedometerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPedometerData.h; sourceTree = "<group>"; };
+		94B245901CEDA58300324364 /* QYPedometerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYPedometerData.m; sourceTree = "<group>"; };
+		94B245911CEDA58300324364 /* QYPedometerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QYPedometerManager.h; sourceTree = "<group>"; };
+		94B245921CEDA58300324364 /* QYPedometerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QYPedometerManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94B245641CED4B6F00324364 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		94B2455E1CED4B6F00324364 = {
+			isa = PBXGroup;
+			children = (
+				94B2458E1CEDA58300324364 /* PedometerManager */,
+				94B245691CED4B7000324364 /* QYPedometerDemo */,
+				94B245681CED4B6F00324364 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		94B245681CED4B6F00324364 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94B245671CED4B6F00324364 /* QYPedometerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94B245691CED4B7000324364 /* QYPedometerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				94B2456D1CED4B7000324364 /* AppDelegate.h */,
+				94B2456E1CED4B7000324364 /* AppDelegate.m */,
+				94B245701CED4B7000324364 /* ViewController.h */,
+				94B245711CED4B7000324364 /* ViewController.m */,
+				94B245731CED4B7000324364 /* Main.storyboard */,
+				94B245761CED4B7000324364 /* Assets.xcassets */,
+				94B245781CED4B7000324364 /* LaunchScreen.storyboard */,
+				94B2457B1CED4B7000324364 /* Info.plist */,
+				94B2456A1CED4B7000324364 /* Supporting Files */,
+			);
+			path = QYPedometerDemo;
+			sourceTree = "<group>";
+		};
+		94B2456A1CED4B7000324364 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				94B2456B1CED4B7000324364 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		94B2458E1CEDA58300324364 /* PedometerManager */ = {
+			isa = PBXGroup;
+			children = (
+				94B2458F1CEDA58300324364 /* QYPedometerData.h */,
+				94B245901CEDA58300324364 /* QYPedometerData.m */,
+				94B245911CEDA58300324364 /* QYPedometerManager.h */,
+				94B245921CEDA58300324364 /* QYPedometerManager.m */,
+			);
+			path = PedometerManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94B245661CED4B6F00324364 /* QYPedometerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94B2457E1CED4B7000324364 /* Build configuration list for PBXNativeTarget "QYPedometerDemo" */;
+			buildPhases = (
+				94B245631CED4B6F00324364 /* Sources */,
+				94B245641CED4B6F00324364 /* Frameworks */,
+				94B245651CED4B6F00324364 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QYPedometerDemo;
+			productName = QYPedometerDemo;
+			productReference = 94B245671CED4B6F00324364 /* QYPedometerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94B2455F1CED4B6F00324364 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "田鹏涛";
+				TargetAttributes = {
+					94B245661CED4B6F00324364 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 94B245621CED4B6F00324364 /* Build configuration list for PBXProject "QYPedometerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94B2455E1CED4B6F00324364;
+			productRefGroup = 94B245681CED4B6F00324364 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94B245661CED4B6F00324364 /* QYPedometerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94B245651CED4B6F00324364 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B2457A1CED4B7000324364 /* LaunchScreen.storyboard in Resources */,
+				94B245771CED4B7000324364 /* Assets.xcassets in Resources */,
+				94B245751CED4B7000324364 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94B245631CED4B6F00324364 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94B245721CED4B7000324364 /* ViewController.m in Sources */,
+				94B245941CEDA58300324364 /* QYPedometerManager.m in Sources */,
+				94B245931CEDA58300324364 /* QYPedometerData.m in Sources */,
+				94B2456F1CED4B7000324364 /* AppDelegate.m in Sources */,
+				94B2456C1CED4B7000324364 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		94B245731CED4B7000324364 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B245741CED4B7000324364 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94B245781CED4B7000324364 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94B245791CED4B7000324364 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94B2457C1CED4B7000324364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		94B2457D1CED4B7000324364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94B2457F1CED4B7000324364 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dong Chen (77K23TCUE8)";
+				INFOPLIST_FILE = QYPedometerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanya.lgz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cecc55a4-e68c-4d87-a878-5bed39f8ea3b";
+			};
+			name = Debug;
+		};
+		94B245801CED4B7000324364 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Dong Chen (77K23TCUE8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Dong Chen (77K23TCUE8)";
+				INFOPLIST_FILE = QYPedometerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanya.lgz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "cecc55a4-e68c-4d87-a878-5bed39f8ea3b";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94B245621CED4B6F00324364 /* Build configuration list for PBXProject "QYPedometerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B2457C1CED4B7000324364 /* Debug */,
+				94B2457D1CED4B7000324364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94B2457E1CED4B7000324364 /* Build configuration list for PBXNativeTarget "QYPedometerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94B2457F1CED4B7000324364 /* Debug */,
+				94B245801CED4B7000324364 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94B2455F1CED4B6F00324364 /* Project object */;
+}
