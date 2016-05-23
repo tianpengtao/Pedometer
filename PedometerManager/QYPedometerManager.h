@@ -10,7 +10,7 @@
  */
 
 #import "QYPedometerData.h"
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 typedef void (^QYPedometerHandler)(QYPedometerData *pedometerData,
                                    NSError *error);
 
@@ -23,7 +23,7 @@ typedef void (^QYPedometerHandler)(QYPedometerData *pedometerData,
  */
 + (BOOL)isStepCountingAvailable;
 /**
- *  查询某时间段的运动数据
+ *  查询某时间段的行走数据
  *
  *  @param start   开始时间
  *  @param end     结束时间
@@ -33,7 +33,7 @@ typedef void (^QYPedometerHandler)(QYPedometerData *pedometerData,
                             toDate:(NSDate *)end
                        withHandler:(QYPedometerHandler)handler;
 /**
- *  监测今天（从零点开始）的运动数据
+ *  监听今天（从零点开始）的行走数据
  *
  *  @param handler 查询结果、变化就更新
  */
@@ -42,6 +42,5 @@ typedef void (^QYPedometerHandler)(QYPedometerData *pedometerData,
  *  停止监听运动数据
  */
 - (void)stopPedometerUpdates;
-
 
 @end

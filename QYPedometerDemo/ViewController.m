@@ -66,8 +66,7 @@ queryPedometerDataFromDate:fromDate
   } else {
     UIAlertView *alertView = [[UIAlertView alloc]
             initWithTitle:@"此设备不支持记步功能"
-                  message:
-                      @"仅支持真机并且系统版本需要大于等于iOS7"
+                  message:@"仅支持iPhone5s及其以上设备"
                  delegate:self
         cancelButtonTitle:nil
         otherButtonTitles:@"OK", nil];

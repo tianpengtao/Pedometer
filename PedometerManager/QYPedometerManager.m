@@ -91,53 +91,52 @@
 #endif
 }
 /**
- *  监测今天（从零点开始）的运动数据
+ *  监听今天（从零点开始）的行走数据
  *
  *  @param handler 查询结果、变化就更新
  */
-- (void)startPedometerUpdatesTodayWithHandler:(QYPedometerHandler)handler {
+- (void)startPedometerUpdatesTodayWithHandler:(QYPedometerHandler)handler;
+{
 
-  #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
-  	NSDate *toDate = [NSDate date];
-  	NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-  	[dateFormatter setDateFormat:@"yyyy-MM-dd"];
-  	NSDate *fromDate =
-  	[dateFormatter dateFromString:[dateFormatter stringFromDate:toDate]];
-    [_pedometer
-        startPedometerUpdatesFromDate:fromDate
-                          withHandler:^(CMPedometerData *_Nullable
-                          pedometerData,
-                                        NSError *_Nullable error) {
-                            dispatch_async(dispatch_get_main_queue(), ^{
-                              QYPedometerData *customPedometerData =
-                                  [[QYPedometerData alloc] init];
-                              customPedometerData.numberOfSteps =
-                                  pedometerData.numberOfSteps;
-                              customPedometerData.distance =
-                              pedometerData.distance;
-                              customPedometerData.floorsAscended =
-                                  pedometerData.floorsAscended;
-                              customPedometerData.floorsDescended =
-                                  pedometerData.floorsDescended;
-                              handler(customPedometerData, error);
-                            });
-                          }];
-  #else
-	[_stepCounter startStepCountingUpdatesToQueue:_operationQueue
-																			 updateOn:10
-																		withHandler:^(NSInteger numberOfSteps,
-																									NSDate *_Nonnull timestamp,
-																									NSError *_Nullable error) {
-																			QYPedometerData *pedometerData =
-																			[[QYPedometerData alloc] init];
-																			pedometerData.numberOfSteps =
-																			@(numberOfSteps);
-																			handler(pedometerData, error);
-																		}];
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
+  NSDate *toDate = [NSDate date];
+  NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+  [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+  NSDate *fromDate =
+      [dateFormatter dateFromString:[dateFormatter stringFromDate:toDate]];
+  [_pedometer
+      startPedometerUpdatesFromDate:fromDate
+                        withHandler:^(CMPedometerData *_Nullable pedometerData,
+                                      NSError *_Nullable error) {
+                          dispatch_async(dispatch_get_main_queue(), ^{
+                            QYPedometerData *customPedometerData =
+                                [[QYPedometerData alloc] init];
+                            customPedometerData.numberOfSteps =
+                                pedometerData.numberOfSteps;
+                            customPedometerData.distance =
+                                pedometerData.distance;
+                            customPedometerData.floorsAscended =
+                                pedometerData.floorsAscended;
+                            customPedometerData.floorsDescended =
+                                pedometerData.floorsDescended;
+                            handler(customPedometerData, error);
+                          });
+                        }];
+#else
+  [_stepCounter startStepCountingUpdatesToQueue:_operationQueue
+                                       updateOn:10
+                                    withHandler:^(NSInteger numberOfSteps,
+                                                  NSDate *_Nonnull timestamp,
+                                                  NSError *_Nullable error) {
+                                      QYPedometerData *pedometerData =
+                                          [[QYPedometerData alloc] init];
+                                      pedometerData.numberOfSteps =
+                                          @(numberOfSteps);
+                                      handler(pedometerData, error);
+                                    }];
 
-  #endif
-
-  }
+#endif
+}
 /**
  *  停止监听运动数据
  */
@@ -153,11 +152,11 @@
  *
  *  @return YES or NO
  */
-+ (BOOL)isStepCountingAvailable{
++ (BOOL)isStepCountingAvailable {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_8_0
-	return [CMPedometer isStepCountingAvailable];
+  return [CMPedometer isStepCountingAvailable];
 #else
-	return [CMStepCounter isStepCountingAvailable];
+  return [CMStepCounter isStepCountingAvailable];
 #endif
 }
 @end
